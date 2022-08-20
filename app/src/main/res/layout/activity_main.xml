@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="468dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewUm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primeiro Valor"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtNumeroUm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewDois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segundo Valor"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtNumeroDois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSoma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Soma"
+            android:text="Soma" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Subtracao"
+            android:text="Subtração" />
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Multiplicar"
+            android:text="Multiplicação" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Divisao"
+            android:text="Divisão" />
+
+        <Button
+            android:id="@+id/btnLimpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Limpar"
+            android:text="Limpar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
